@@ -1,0 +1,15 @@
+<html>
+<h1>No Internet Connection!</h1>
+
+<p id="reload"></p>
+
+<script>
+if(window.location.href != "file:///android_asset/Connection_Issue.html"){
+    document.getElementById("reload").innerHTML =
+    "<a href=\'" + document.referrer+"\'>Reload</a>";
+}else{
+    document.getElementById("reload").innerHTML =
+    "<a href=\'https://www.google.com\'>Reload</a>";
+}
+
+</script></html>
